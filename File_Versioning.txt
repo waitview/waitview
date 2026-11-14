@@ -1,0 +1,29 @@
+ File Versioning
+ Ignore Patterns
+ Advanced
+
+
+
+
+
+-------------------------------------------------------------------------------------
+
+
+File Versioning  Help
+Staggered File Versioning
+Files are moved to date stamped versions in a .stversions directory when replaced or deleted by Syncthing. Versions are automatically deleted if they are older than the maximum age or exceed the number of files allowed in an interval.
+
+The following intervals are used: for the first hour a version is kept every 30 seconds, for the first day a version is kept every hour, for the first 30 days a version is kept every day, until the maximum age a version is kept every week.
+
+Maximum Age
+365
+days
+The maximum time to keep a version (in days, set to 0 to keep versions forever).
+
+Versions Path
+Path where versions should be stored (leave empty for the default .stversions directory in the shared folder).
+
+Cleanup Interval
+3600
+seconds
+The interval, in seconds, for running cleanup in the versions directory. Zero to disable periodic cleaning.
